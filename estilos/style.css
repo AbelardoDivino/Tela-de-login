@@ -70,3 +70,8 @@ section#login > #imagen{
         width: 60%;
     }
 }
+
+#formulario > p{
+    font-size: 0.8em;
+    
+}
