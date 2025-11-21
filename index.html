@@ -5,48 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
     <link rel="stylesheet" href="estilos/style.css">
-
     <link rel="stylesheet" href="estilos/mediaquerie.css">
+
     <title>Login</title>
 </head>
 <body>
-    
+
 <main>
     <section id="login">
 
         <div id="imagen"></div>
-        
+
         <div id="formulario">
-
             <h1>Login</h1>
-
             <p>Seja bem-vindo novamente, faça seu login para continuar.</p>
-            <br>
 
             <form action="login.php" method="post">
-               
+
+                <!-- CAMPO EMAIL -->
                 <div class="campo">
-
-                   <i class="material-symbols-outlined">person</i>
-
-                    <input type="email" name="login" id="ilogin" placeholder="Seu E-mail" required maxlength="30">
-                     <label for="ilogin">login</label autocomplete="email">
+                    <i class="material-symbols-outlined">person</i>
+                    <input type="email" name="login" id="ilogin" placeholder="Seu E-mail" required autocomplete="email" maxlength="30">
                 </div>
-                <div class="campo">
 
+                <!-- CAMPO SENHA -->
+                <div class="campo">
                     <i class="material-symbols-outlined">vpn_key</i>
-                  
-                    <input type="password" name="senha" id="isenha" placeholder="Senha " required autocomplete="current-password" maxlength="30">
-                    <label for="isenha">Senha</label>
-
-                    <input type="submit" value="Entrar">
-                    <a href="esqueci.html">Esqueci a senha <i class="material-symbols-outlined">email</i></a>
+                    <input type="password" name="senha" id="isenha" placeholder="Senha" required autocomplete="current-password" maxlength="30">
                 </div>
+
+                <!-- BOTÃO ENTRAR (FILHO DIRETO DO FORM) -->
+                <input type="submit" value="Entrar">
+
+                <!-- BOTÃO ESQUECI A SENHA -->
+                <a href="esqueci.html" class="botao">
+                    Esqueci a senha <i class="material-symbols-outlined">email</i>
+                </a>
 
             </form>
-
         </div>
 
     </section>
